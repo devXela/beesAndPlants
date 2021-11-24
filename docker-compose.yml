@@ -3,9 +3,9 @@ version: "3.8"
 services:
   app:
     image: php:8.0-fpm
-    context: ./
+    container_name: lumen
     volumes:
-      - ./:/src
+      - ./lumen:/src
     command: /src/scripts/configure.sh
     ports:
       - 8001:8001

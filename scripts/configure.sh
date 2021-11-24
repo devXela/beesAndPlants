@@ -9,5 +9,5 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
 mv composer.phar /usr/local/bin/composer
 composer create-project -n --prefer-dist laravel/lumen /src/app
-chown 700 $HOME *
+chmod 777 -R /src
 php -S 0.0.0.0:8001 -t /src/app/public
